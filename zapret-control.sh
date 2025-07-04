@@ -560,7 +560,7 @@ install_zapret() {
     sleep 2
     git clone https://github.com/bol-van/zapret /opt/zapret
     echo "Клонирую репозиторий..."
-    git clone https://github.com/Snowy-Fluffy/zapret.cfgs /opt/zapret/zapret.cfgs
+    git clone https://github.com/cut3k1tten/zapret.cfgs /opt/zapret/zapret.cfgs
     echo "Клонирование успешно завершено."
     
     rm -rf /opt/zapret/binaries
@@ -838,7 +838,7 @@ configure_zapret_conf() {
     if [[ ! -d /opt/zapret/zapret.cfgs ]]; then
         echo -e "\e[35mКлонирую конфигурации...\e[0m"
         manage_service stop
-        git clone https://github.com/Snowy-Fluffy/zapret.cfgs /opt/zapret/zapret.cfgs
+        git clone https://github.com/cut3k1tten/zapret.cfgs /opt/zapret/zapret.cfgs
         echo -e "\e[32mКлонирование успешно завершено.\e[0m"
         manage_service start
         sleep 2
